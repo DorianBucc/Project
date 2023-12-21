@@ -1,0 +1,8 @@
+pour compiler : g++ *.cpp -lwsock32
+
+Le main() est dans fenetre.cpp
+
+Faudra modifier le chemin du fichier de destination qui va être dessine (moi = "C:\Project\test.txt")
+
+Erreur.cpp nest pas utiliser
+fichier.cpp nest pas utiliser

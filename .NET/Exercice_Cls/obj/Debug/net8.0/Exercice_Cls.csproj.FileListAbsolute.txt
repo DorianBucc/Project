@@ -1,0 +1,15 @@
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\bin\Debug\net8.0\Exercice_Cls.exe
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\bin\Debug\net8.0\Exercice_Cls.deps.json
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\bin\Debug\net8.0\Exercice_Cls.runtimeconfig.json
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\bin\Debug\net8.0\Exercice_Cls.dll
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\bin\Debug\net8.0\Exercice_Cls.pdb
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.AssemblyInfoInputs.cache
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.AssemblyInfo.cs
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.csproj.CoreCompileInputs.cache
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.sourcelink.json
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.dll
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\refint\Exercice_Cls.dll
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.pdb
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\Exercice_Cls.genruntimeconfig.cache
+C:\Users\bucch\Git\Programme\.NET\Exercice_Cls\obj\Debug\net8.0\ref\Exercice_Cls.dll

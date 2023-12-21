@@ -1,0 +1,5 @@
+pour compiler : javac *.java
+pour lancer : java -classpath .. serverjava.TestServerDraw
+
+Probleme de la première page pas entièrement dessiner au début c'était à cause de mon pc portable qui est trop lent
+Par contre pour les requete socket avec moin de 1ms c'est pas à cause du pc (sois la config du socket ou autre)
