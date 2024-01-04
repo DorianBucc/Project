@@ -7,6 +7,7 @@ Flutter est un framework permettant la création d'interface plus facilement, le
     * C:\flutter
 4. Puis ajouter à la PATH : [nomduchemin]/flutter/bin
     * Dans mon exemple ça donnerai ceci : C:\flutter\bin
+    (https://github.com/DorianBucc/Prog/tree/main?tab=readme-ov-file#PATH)
 5. Taper dans le terminal la cli : flutter doctor
     * La cli vous indique les problemes ou extension que vous n'avez pas ( certaine ne sont pas obligatoire )
 6. Essayez la cli pour vérifier que l'installation s'est bien déroulée : flutter --version
