@@ -1,4 +1,4 @@
-# **Installation du compilateur c++ (g++) avec MinGW**
+# Installation du compilateur c++ (g++) avec MinGW
 Le compilateur permet de transformé du code c++ en fichier binaire/executable.
 
 1. Téléchargez et installez l'installateur depuis : https://sourceforge.net/projects/mingw/
@@ -13,7 +13,7 @@ Le compilateur permet de transformé du code c++ en fichier binaire/executable.
 
 
 
-# **Utilisation de g++**
+# Utilisation de g++
 * Pour compiler : g++ -o NomDuFichierExecutable NomDuFichierSource.cpp
 * Pour executer sur :
     * CMD : Start NomDuFichierExecutable.exe

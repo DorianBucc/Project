@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bucch\\Git\\Programme\\.NET\\Exercice_Cls\\Exercice_Cls.csproj",
+      "projectUniqueName": "C:\\Users\\bucch\\Git\\Project\\.NET\\Exercice_Cls\\Exercice_Cls.csproj",
       "projectName": "Exercice_Cls",
-      "projectPath": "C:\\Users\\bucch\\Git\\Programme\\.NET\\Exercice_Cls\\Exercice_Cls.csproj",
+      "projectPath": "C:\\Users\\bucch\\Git\\Project\\.NET\\Exercice_Cls\\Exercice_Cls.csproj",
       "packagesPath": "C:\\Users\\bucch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bucch\\Git\\Programme\\.NET\\Exercice_Cls\\obj\\",
+      "outputPath": "C:\\Users\\bucch\\Git\\Project\\.NET\\Exercice_Cls\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bucch\\AppData\\Roaming\\NuGet\\NuGet.Config"

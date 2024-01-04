@@ -1,4 +1,4 @@
-## **Installation de Flutter pour vscode sur Windows**
+## Installation de Flutter pour vscode sur Windows
 Flutter est un framework permettant la création d'interface plus facilement, le flutter est basé sur le language Dart.
 
 1. Télécharger le fichier zip : https://docs.flutter.dev/get-started/install
@@ -13,7 +13,7 @@ Flutter est un framework permettant la création d'interface plus facilement, le
 
 
 
-## **Création d'un projet Flutter**
+## Création d'un projet Flutter
 1. Ajouter les extensions à vscode : Flutter, Dart
 2. Taper dans la barre de recherche de vscode : >Flutter: New Project
     * ou alors Ctrl+Shift+P et taper aussi : >Flutter: New Project
@@ -23,7 +23,7 @@ Flutter est un framework permettant la création d'interface plus facilement, le
 
 ---
 
-## **Installation de Android Studio**
+## Installation de Android Studio
 Il permet l'utilisation d'emulateur pour tester le projet.
 
 1. Télécharger le fichier l'installeur : https://developer.android.com/studio
@@ -31,6 +31,6 @@ Il permet l'utilisation d'emulateur pour tester le projet.
 
 
 
-## **Ouverture d'un emulateur Android**
+## Ouverture d'un emulateur Android
 
 * Chercher le bouton "Virtual Device Manager" d'origine il est dans "More Actions" puis lancer votre android si il en existe ou ajouter en un.

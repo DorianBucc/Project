@@ -1,16 +1,3 @@
-# Programme
-
-| Language/Feature | ReadMe Finished |
-|----------|------------ |
-| .NET | ✘ |
-| ASM | ✔ |
-| C | ✔ |
-| C++ | ✔ |
-| Flutter | ✔ |
-| Java | ✘ |
-| Python | - |
-| SDL | ✘  |
-
 # Bienvenue
 
 Ce répertoire contient différents projets et programmes que j'ai réalisés dans le domaine de l'informatique pour mes cours ou pour moi-même.
