@@ -2,7 +2,9 @@
 
 ## Comment compiler et executer un programme Java (.jar) ? (Windows)
 
-Src : https://learn.microsoft.com/fr-fr/sql/language-extensions/how-to/create-a-java-jar-file-from-class-files
+Src :
+* https://learn.microsoft.com/fr-fr/sql/language-extensions/how-to/create-a-java-jar-file-from-class-files
+* https://baptiste-wicht.developpez.com/tutoriels/java/outils/executables/
 
 1. Compiler les fichier .java avec : javac .\package\*.java
 
