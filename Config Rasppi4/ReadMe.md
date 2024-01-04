@@ -12,7 +12,7 @@ Raspberry pi 4 en 4go ram sur Ubuntu server 22.04.3
     - Le troisième c'est la carte sd (le mieux c'est entre 16go et 128go)
 ...
 
-
+---
 
 ## Configuration du reglage fan
 cli utile :
@@ -26,3 +26,19 @@ cli utile :
     ("gpiopin=" le pin qui controle le ventilateur(pwn) et "temp=" la température "60°C = 60000")
     pour un réglage à 60°C (déclenchement 60°C s'arrête une fois 50°C passé)
 4. Puis redémarrer pour appliquer le réglage
+
+---
+
+## Installation et configuration d'un server bedrock"" avec Nukkit
+cli de base :
+- sudo apt-get update -y && sudo apt-get upgrade -y
+
+1. mkdir ~/nukkit
+2. cd ~/nukkit
+3. wget -O nukkit.jar https://go.pimylifeup.com/3xsPQA/nukkit     // command pour télécharger et mettre à jour le serveur
+4. java -jar nukkit.jar
+Fichier de config:
+- server.properties
+- nukkit.yml
+
+Src : https://pimylifeup.com/raspberry-pi-minecraft-pe-server/
