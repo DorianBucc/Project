@@ -12,6 +12,7 @@ public class Interlocuteur extends Thread
     BufferStrategy strategy;
     int i;
     Frame f1AR;
+    
 
     public Interlocuteur(Socket client, int i) throws IOException
     { 

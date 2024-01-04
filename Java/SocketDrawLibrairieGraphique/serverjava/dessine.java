@@ -10,6 +10,7 @@ public class dessine extends Thread
     BufferStrategy strategy;
     Frame f1AR;
     String requete;
+    DessineFormeCOR dessineCOR = null;
 
     public dessine(String requete,Frame frame) throws IOException
     { 
@@ -17,6 +18,15 @@ public class dessine extends Thread
         this.graphics = frame.getGraphics();
         this.strategy = frame.getBufferStrategy();
         this.requete = requete;
+        
+        DessineFormeCOR forme = new DessineFormeCORDroite(null, graphics);
+        forme = new DessineFormeCORDroiteEpaisseur(forme, graphics);
+        forme = new DessineFormeCOROval(forme, graphics);
+        forme = new DessineFormeCOROvalRempli(forme, graphics);
+        forme = new DessineFormeCORRectangle(forme, graphics);
+        forme = new DessineFormeCORRectangleRempli(forme, graphics);
+        forme = new DessineFormeCORString(forme, graphics);
+        this.dessineCOR = forme;
     }
 
     @Override
@@ -24,7 +34,7 @@ public class dessine extends Thread
     {
         try
         {
-            if("show".equals(this.requete.trim().toLowerCase()))
+            if("show".equals(this.requete.trim()))
             {
                 this.strategy.show();
             }
@@ -32,13 +42,14 @@ public class dessine extends Thread
             {
                 String[] TabReq = this.requete.split(",");
                 
-                if("window".equals(TabReq[0].trim().toLowerCase())) 
+                if("window".equals(TabReq[0].trim())) 
                     this.Init(TabReq);
                 else this.ReadResponse(TabReq);
             }
         }
         catch(Exception e){}
     }
+    //--------------
     public void Init(String[] TabReq){
         try {
             this.f1AR.setTitle(TabReq[3].trim());
@@ -55,63 +66,6 @@ public class dessine extends Thread
     }
     public boolean ReadResponse(String[] TabReq)
     {
-        switch (TabReq[0].trim().toLowerCase()) 
-        {
-            case "droite":
-                this.graphics.drawLine
-                (
-                    Integer.parseInt(TabReq[1].trim()),
-                    Integer.parseInt(TabReq[2].trim()),
-                    Integer.parseInt(TabReq[3].trim()),
-                    Integer.parseInt(TabReq[4].trim())
-                );
-                
-                return true;
-            case "rectangle":
-                this.graphics.drawRect
-                (                   
-                    Integer.parseInt(TabReq[1].trim()),
-                    Integer.parseInt(TabReq[2].trim()),
-                    Integer.parseInt(TabReq[3].trim()),
-                    Integer.parseInt(TabReq[4].trim())
-                );
-                return true;
-            case "croix":
-                this.graphics.drawLine
-                (
-                    Integer.parseInt(TabReq[1].trim()),
-                    Integer.parseInt(TabReq[2].trim()),
-                    Integer.parseInt(TabReq[3].trim()),
-                    Integer.parseInt(TabReq[4].trim())
-                );
-                this.graphics.drawLine
-                (
-                    Integer.parseInt(TabReq[1].trim()),
-                    Integer.parseInt(TabReq[3].trim()),
-                    Integer.parseInt(TabReq[4].trim()),
-                    Integer.parseInt(TabReq[2].trim())
-                );
-                return true;
-            case "cercle":
-                graphics.drawOval
-                (
-                    Integer.parseInt(TabReq[1].trim()),
-                    Integer.parseInt(TabReq[2].trim()),
-                    Integer.parseInt(TabReq[3].trim()),
-                    Integer.parseInt(TabReq[4].trim())
-                );
-                return true;
-            
-            case "text":
-                graphics.drawString
-                (
-                    TabReq[1],
-                    Integer.parseInt(TabReq[2].trim()),
-                    Integer.parseInt(TabReq[3].trim())
-                );
-                return true;
-            default:
-                return false;
-        }
+        return this.dessineCOR.dessine(TabReq);
     }
 }

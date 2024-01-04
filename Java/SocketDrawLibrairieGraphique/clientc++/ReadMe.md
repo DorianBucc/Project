@@ -1,0 +1,1 @@
+pour compiler : g++ *.cpp -lwsock32
