@@ -3,7 +3,7 @@ Le compilateur permet de transformé du code C# en fichier binaire/executable.
 
 1. Téléchargez et installez l'installateur depuis : https://dotnet.microsoft.com/download/dotnet
 
-2. Essayez la cli pour vérifier que l'installation s'est bien déroulée : dotnet --info
+2. Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```dotnet --info```
 
 
 

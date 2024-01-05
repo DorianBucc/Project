@@ -8,9 +8,9 @@ Flutter est un framework permettant la création d'interface plus facilement, le
 4. Puis ajouter à la PATH : [nomduchemin]/flutter/bin
     * Dans mon exemple ça donnerai ceci : C:\flutter\bin
     (https://github.com/DorianBucc/Prog/tree/main?tab=readme-ov-file#PATH)
-5. Taper dans le terminal la cli : flutter doctor
+5. Taper dans le terminal la cli : ```flutter doctor```
     * La cli vous indique les problemes ou extension que vous n'avez pas ( certaine ne sont pas obligatoire )
-6. Essayez la cli pour vérifier que l'installation s'est bien déroulée : flutter --version
+6. Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```flutter --version```
 
 
 
@@ -19,7 +19,7 @@ Flutter est un framework permettant la création d'interface plus facilement, le
 2. Taper dans la barre de recherche de vscode : >Flutter: New Project
     * ou alors Ctrl+Shift+P et taper aussi : >Flutter: New Project
 * Tous les fichiers de base vont se créer 
-3. Une fois fini, lancer avec la cli : flutter run
+3. Une fois fini, lancer avec la cli : ```flutter run```
     * Puis choisi l'environnement Chrome ou Egde qui sont valide par default, Windows il faut avoir ajouter les librairies (que je n'ai pas fait).
 
 ---

@@ -9,21 +9,21 @@ Le compilateur permet de transformé du code c en fichier binaire/executable.
     * Exemple : C:\MinGW\bin 
 * (Accédez aux variables d'environnement pour ajouter une PATH : https://github.com/DorianBucc/Prog/tree/main?tab=readme-ov-file#PATH)
 
-4. Essayez la cli pour vérifier que l'installation s'est bien déroulée : gcc -v
+4. Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```gcc -v```
 
 # Installation du compilateur c (gcc) avec MinGW sur Linux
 
-- Télécharger et Installer avec : sudo apt install gcc
+- Télécharger et Installer avec : ```sudo apt install gcc```
 
-Essayez la cli pour vérifier que l'installation s'est bien déroulée : gcc -v
+Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```gcc -v```
 
 # Utilisation de gcc Windows
-* Pour compiler : gcc -o NomDuFichierExecutable NomDuFichierSource.c 
+* Pour compiler : ```gcc -o NomDuFichierExecutable NomDuFichierSource.c```
 * Pour executer sur :
-    * CMD : Start NomDuFichierExecutable.exe
-    * Powershell : ./NomDuFichierExecutable.exe 
+    * CMD : ```Start NomDuFichierExecutable.exe```
+    * Powershell : ```./NomDuFichierExecutable.exe```
 
 # Utilisation de gcc Linux
-* Pour compiler : gcc -o NomDuFichierExecutable NomDuFichierSource.c
-* Pour executer : ./NomDuFichierExecutable
+* Pour compiler : ```gcc -o NomDuFichierExecutable NomDuFichierSource.c```
+* Pour executer : ```./NomDuFichierExecutable```
     * (des fois il y a l'extension .out, .exe ou rien)

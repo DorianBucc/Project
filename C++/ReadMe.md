@@ -9,21 +9,21 @@ Le compilateur permet de transformé du code c++ en fichier binaire/executable.
     * Exemple : C:\MinGW\bin
 * (Accédez aux variables d'environnement pour ajouter une PATH : https://github.com/DorianBucc/Prog/tree/main?tab=readme-ov-file#PATH)
 
-4. Essayez la cli pour vérifier que l'installation s'est bien déroulée : g++ -v
+4. Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```g++ -v```
 
 # Installation du compilateur c++ (g++) avec MinGW sur Linux
 
-- Télécharger et Installer avec : sudo apt install g++
+- Télécharger et Installer avec : ```sudo apt install g++```
 
-Essayez la cli pour vérifier que l'installation s'est bien déroulée : g++ -v
+Essayez la cli pour vérifier que l'installation s'est bien déroulée : ```g++ -v```
 
 # Utilisation de g++ Windows
-* Pour compiler : g++ -o NomDuFichierExecutable NomDuFichierSource.cpp
+* Pour compiler : ```g++ -o NomDuFichierExecutable NomDuFichierSource.cpp```
 * Pour executer sur :
-    * CMD : Start NomDuFichierExecutable.exe
-    * Powershell : ./NomDuFichierExecutable.exe 
+    * CMD : ```Start NomDuFichierExecutable.exe```
+    * Powershell : ```./NomDuFichierExecutable.exe```
 
 # Utilisation de g++ Linux
-* Pour compiler : g++ -o NomDuFichierExecutable NomDuFichierSource.cpp
-* Pour executer : ./NomDuFichierExecutable
+* Pour compiler : ```g++ -o NomDuFichierExecutable NomDuFichierSource.cpp```
+* Pour executer : ```./NomDuFichierExecutable```
     * (des fois il y a l'extension .out, .exe ou rien)
