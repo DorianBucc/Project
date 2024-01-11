@@ -22,35 +22,9 @@ Raspberry pi 4 en 4go ram sur Ubuntu server 22.04.3
     
     > et dans *service* si vous souhaité le SSH
 3. Une fois terminer, inserer la carte sd dans la Raspberry et allumer la en l'alimentant
-4. Installer ubuntu en suivant l'intallateur de ubuntu.
+4. Installer votre OS en suivant l'intallateur.
 
-</br>
-
-### Pour se connecte en SSH
-
-1. Aller une terminal sur windows est pour vous connecté faite : `ssh nomutilisateur@adresseipdelamachine`
-> pour une connexion en local
-2. Entré le mot de passe est vous serez connecter
-
-</br>
-
-### Pour ajouter le bureau à distance à ubuntu server
-
-Src : [lien](https://kachou92.over-blog.com/2022/10/comment-installer-le-serveur-xrdp-sur-ubuntu-20.04.html)
-cli basic : `sudo apt update`
-
-</br>
-
-1. Il faudra installer un environnement de bureau:
-    > Soit Gnome : `sudo apt install ubuntu-desktop`
-    
-    > ou Xfce (plus léger) : `sudo apt install xubuntu-desktop`
-2. Puis installer xrdp
-> `sudo apt install xrdp`
-3. Activer le démarrage automatique de xrdp
-> `sudo systemctl enable xrdp`
-4. Puis verifier si ça à fonctionner
-> `sudo systemctl status xrdp`
+* Pour d'autre ajout/configuration sur linux voir mon ReadMe sur [Linux](https://github.com/DorianBucc/Prog/blob/main/Linux.md).
 
 </br>
 
@@ -68,7 +42,7 @@ cli utile :
 2. `sudo snap install pi-fancontrol`
 > le firmware permettant le controle du ventilateur
 3. Pour configurer pi-fancontrol faite : `sudo nano /boot/firmware/config.txt`
-> Puis ajouter ou modifier la(les) ligne(s) : dtoverlay=gpio-fan,gpiopin=14,temp=60000  
+> Puis ajouter ou modifier la(les) ligne(s) : `dtoverlay=gpio-fan,gpiopin=14,temp=60000`
 
 > ("gpiopin=" le pin qui controle le ventilateur(pwn) et "temp=" la température "60°C = 60000") pour un réglage à 60°C (déclenchement 60°C s'arrête une fois 50°C passé)
 4. Puis redémarrer pour appliquer le réglage
