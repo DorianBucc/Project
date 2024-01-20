@@ -1,18 +1,3 @@
-# Programme
-
-ReadMe Finished
-- [x] .NET 
-- [x] Java
-- [ ] PHP
-- [ ] Python
-- [ ] TS
-
-A Faire/I will do
-- [ ] Makefile Windows/Linux
-- [ ] Ajouter phpmyadmin à apache2
-
----
-
 # Bienvenue
 
 </br>

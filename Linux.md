@@ -179,4 +179,18 @@ Dans `/dev` il y a des fichiers "sda" qui sont potentiellements votre clé usb o
 
 </br>
 
+## <a name="anacron">Comment planifier une tache avec Anacron ?</a>
+
+Src : [lien1](http://voidandany.free.fr/index.php/planificateurs-de-taches-cron-et-anacron-et-leurs-interactions/)[lien2](https://doc.ubuntu-fr.org/anacron)
+
+Intro : la difference entre cron et anacron, cron permet de planifier une tache précise avec une répétition ou une date/heure donnée, anacron est tres similaire à la difference que anacron vérifie si cette tache à était faite ou pas apres que l'appareil soit rallumé.
+
+* exemple avec cron : 
+
+    tache : metre à jour tous les jours à 18h
+    - l'appareil était éteint à 18h et on l'allume à 19h, la mise à jour ne sera pas faite se jour là.
+* exemple avec anacron :
+
+    tache : metre à jour tous les jours à 18h
+    - l'appareil était éteint à 18h et on l'allume à 19h, la mise à jour sera faite car il se rendra compte que la tache n'a pas était faite aujourd'hui.
 ---
