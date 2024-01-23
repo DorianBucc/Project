@@ -193,4 +193,5 @@ Intro : la difference entre cron et anacron, cron permet de planifier une tache 
 
     tache : metre à jour tous les jours à 18h
     - l'appareil était éteint à 18h et on l'allume à 19h, la mise à jour sera faite car il se rendra compte que la tache n'a pas était faite aujourd'hui.
+
 ---
