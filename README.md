@@ -12,7 +12,7 @@ Pour la partie programmation pur aller voir le répertoire [*Exercice*](https://
 
 </br>
 
-- [Installation](https://github.com/DorianBucc/Project/tree/main/Installation)
+- [Installation](https://github.com/DorianBucc/Project/tree/main/1-Installation)
 
 </br>
 
@@ -31,7 +31,7 @@ Pour la partie programmation pur aller voir le répertoire [*Exercice*](https://
 - [Projet Bille rebondissante (SDL) - en cours](https://github.com/DorianBucc/Project/tree/main/SDL/ColisionGraviteNF) (2023-2024)
 </br>
 
-- [Certificat sur des sites](https://github.com/DorianBucc/Project/tree/main/1-Certificat)
+- [Certificat sur des sites](https://github.com/DorianBucc/Project/tree/main/2-Certificat)
 
 </br>
 
