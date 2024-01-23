@@ -6,7 +6,7 @@ Le langage C++ est un excellent langage de programmation, largement utilisé pou
 
 Le langage JAVA offre des caractéristiques complémentaires à celles du langage C++. Malgré ses performances de calcul moins optimales, JAVA est doté d'un ensemble complet de librairies (graphiques, bases de données, cryptage, etc.). La librairie AWT, en particulier, permet de créer des dessins complexes (voir images ci-dessous) tout en restant simple à utiliser. Ainsi, notre projet est d'exploiter les fonctionnalités de la librairie AWT depuis un programme C++. La communication entre les deux langages sera établie sous la forme d'une application client-serveur TCP/IP, où le programme C++ agira en tant que client et le programme JAVA en tant que serveur.
 
-![Exemple](/Exemple.png "Exemple")
+![Exemple](./Exemple.png "Exemple")
 
 Cahier des charges : 
 
