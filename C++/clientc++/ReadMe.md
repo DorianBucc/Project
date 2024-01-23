@@ -1,1 +1,0 @@
-pour compiler ` g++ *.cpp J++/*.cpp -lwsock32 `
