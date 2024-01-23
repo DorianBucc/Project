@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "sdl_ttf.h": "c",
+        "sdl_image.h": "c",
+        "sdl.h": "c",
+        "xmemory": "c",
+        "xutility": "c",
+        "stdio.h": "c",
+        "lib.h": "c"
+    }
+}
