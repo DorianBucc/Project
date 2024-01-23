@@ -10,8 +10,8 @@ N'hésitez pas à explorer ces projets et programmes et à me faire part de vos 
 
 </br>
 
-- [Windows](https://github.com/DorianBucc/Prog/blob/main/Windows.md)
-- [Linux](https://github.com/DorianBucc/Prog/blob/main/Linux.md)
+- [Windows](https://github.com/DorianBucc/Project/blob/main/Windows.md)
+- [Linux](https://github.com/DorianBucc/Project/blob/main/Linux.md)
 
 </br>
 

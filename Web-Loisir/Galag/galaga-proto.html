@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        position: relative;
+        text-align: center;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+    }
+    #Jeu{
+        
+        position: relative;
+        transform: translateY(25%);
+        border: solid 2px rgb(255, 255, 255);
+        height: 600px;
+        width: 1000px;
+        background-color: black;
+
+    }
+</style>
+<body id="body">
+    <canvas id="Jeu">
+        <img id="src" src="./images/v.gif" width="300" height="227" />
+        <img id="enn" src="./images/ft.png" width="300" height="227" />
+    </canvas>
+    
+</body>
+<script>
+    const body = document.getElementById("body");
+    const Jeu = document.getElementById("Jeu");
+    const img = document.getElementById("src");
+    const imgenn = document.getElementById("enn");
+    const context = Jeu.getContext("2d");
+    Jeu.width = Jeu.clientWidth;
+    Jeu.height = Jeu.clientHeight;
+
+    class key{
+    left = false;
+    right = false;
+    up = false;}
+
+    class Player{
+        constructor(){
+            this.dim = {w:40,h:40};
+            this.pos = {x:(Jeu.width-this.dim.w)/2,y:Jeu.height-this.dim.h};
+            this.compt = 0;
+            this.speed = 7;
+        }
+        draw(){
+            context.drawImage(img, this.pos.x, this.pos.y, this.dim.w, this.dim.h);
+        }
+        shoot(){
+            if(this.compt <= 0){
+            Tmissile.push(new missile(this.pos.x+(this.dim.w/2),this.pos.y));
+            this.compt = 10;
+            }
+            else this.compt--;
+        }
+        update(){
+            
+            if(key.right && this.pos.x <= Jeu.width-this.dim.w) this.pos.x += this.speed;
+            else if (key.left && this.pos.x >= 0) this.pos.x -= this.speed;
+            if(key.up) this.shoot();
+            else this.compt = 0;
+            this.draw();
+           
+        }
+    }
+    
+    class missile{
+        constructor(xx,yy){
+            this.dim = {w:4,h:25};
+            this.pos = {x:xx-(this.dim.w/2),y:yy};
+            this.speed = 10;
+        }
+        draw(){
+            context.fillStyle = "red";
+            context.fillRect(this.pos.x,this.pos.y,this.dim.w,this.dim.h);
+        }
+        update(){
+            this.draw();
+            this.pos.y -= this.speed;
+        }
+    }
+    
+    class enn
+    {
+        constructor(vx,vy){
+            this.pos = {x : vx, y : vy};
+            this.dim = {w : 40, h : 40};
+            this.life = true;
+            this.sens = false;
+            this.speed = 5;
+        }
+        draw(){
+            context.drawImage(imgenn, this.pos.x, this.pos.y, this.dim.w, this.dim.h);
+        }
+        update(){
+            if(this.life)
+            { 
+                this.draw();
+                Tmissile.forEach(M => {
+                    if((M.pos.x >= this.pos.x && M.pos.x <= this.pos.x + this.dim.w) && (M.pos.y <= this.pos.y && M.pos.y >= this.pos.y-this.dim.h) && M.dim.h > 0){
+                        this.life = false;
+                        M.dim.h = 0;
+                    }      
+                });
+
+                if(!this.sens)
+                {
+                    this.pos.x += this.speed;
+                    if(this.pos.x + this.dim.w >= Jeu.width){ 
+                        this.sens = true;
+                        this.pos.y += this.dim.h*2;
+                    }
+                }
+                else
+                {
+                    this.pos.x -= this.speed;
+                    if(this.pos.x <= 0){
+                        this.sens = false;
+                        this.pos.y += this.dim.h*2;
+                    }
+                }                 
+                if(this.pos.y >= Jeu.height-this.dim.h) alert("Perdu");
+            }
+        }
+    }
+
+    let Tennemi = [];
+    const p = new Player();
+    let Tmissile = [];
+    let continu = false;
+    
+    for (let j = 0; j < 160; j += 45){
+        for (let i = 0; i < 400; i += 45){
+            Tennemi.push(new enn(i,j));
+        }
+    }
+
+    // boucle de gestion de jeu
+    const Loop = () => {
+    
+    context.clearRect(0, 0, Jeu.width, Jeu.height);
+    
+    p.update();
+    Tmissile.forEach(M => {
+        if(M.pos.y <= -10){ Tmissile.splice(M, 1);}
+        else M.update();      
+    });
+
+    Tennemi.forEach(E => {
+        E.update();               
+    });
+    
+    //Test de fin gagnante
+    if(!continu){
+        continu = true;
+        Tennemi.forEach(X => { if(X.life) continu = false; });
+    }
+    else if(continu) alert("gagner");
+
+    requestAnimationFrame(Loop);}
+    Loop();
+
+
+
+
+    //Event
+    addEventListener("keydown", (event) => {
+        switch(event.key){
+            case 'ArrowLeft' : 
+                key.left = true;
+                break;
+            case 'ArrowRight' : 
+                key.right = true;
+                break;
+            case 'ArrowUp' :    
+                key.up = true;         
+                break;
+        }
+    })
+
+    addEventListener("keyup", (event) => {
+        switch(event.key){
+            case 'ArrowLeft' : 
+                key.left = false;
+                break;
+            case 'ArrowRight' : 
+                key.right = false;
+                break;
+            case 'ArrowUp' : 
+                key.up = false;
+                break;
+        }
+    })
+</script>
+</html>

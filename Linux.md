@@ -121,8 +121,8 @@ Installer php pour traiter les fichier .php sur votre serveur
 
 ### <a name="phpmyadmin">Ajouter phpmyadmin à apache2</a>
 
-Src : [lien1](https://doc.ubuntu-fr.org/phpmyadmin)
-
+Src : [lien1](https://doc.ubuntu-fr.org/phpmyadmin) 
+LemercierT
 </br>
 
 1. Télécharger et installer maradb-server et mysql par la même occasion
@@ -181,7 +181,7 @@ Dans `/dev` il y a des fichiers "sda" qui sont potentiellements votre clé usb o
 
 ## <a name="anacron">Comment planifier une tache avec Anacron ?</a>
 
-Src : [lien1](http://voidandany.free.fr/index.php/planificateurs-de-taches-cron-et-anacron-et-leurs-interactions/)[lien2](https://doc.ubuntu-fr.org/anacron)
+Src : [lien1](http://voidandany.free.fr/index.php/planificateurs-de-taches-cron-et-anacron-et-leurs-interactions/) [lien2](https://doc.ubuntu-fr.org/anacron)
 
 Intro : la difference entre cron et anacron, cron permet de planifier une tache précise avec une répétition ou une date/heure donnée, anacron est tres similaire à la difference que anacron vérifie si cette tache à était faite ou pas apres que l'appareil soit rallumé.
 
