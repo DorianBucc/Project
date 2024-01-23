@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    background-color: #FFFFFF;
+}
+body{
+    background-image: url(images/truc1.jpg);
+    background-size: cover;
+}
+.div_header_titre{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+.p_header_titre{
+    color: rgb(186, 196, 255);
+    font-size: 30px;
+}
+.p1_header_titre{
+    color: white;
+    font-size: large;
+    margin-right: 1%;
+    margin-top: 10px;
+}
+.div_logo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 2%;
+    bottom: 3.5rem;
+    background-image: url(./images/unniv.webp);
+    border-radius: 50em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.div_nav{
+    position: relative;
+    display: grid;
+    font-size: 22px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.div_nav_a{
+    position: relative;
+    width: 100%;
+}
+.aff{
+    position: static;
+}
+
+.div_nav_a:hover .aff
+{
+	display: block;
+}
+
+.div_nav_a{
+    text-align: center;
+}
+
+#div_nav_hidden1a{
+    padding-top: 5px;
+}
+#div_nav_hidden1a a{
+    margin: 5px;
+}
+
+.div_main{
+    color: white;
+}
+.img_1a{
+    transition: 0.5s;
+    width: 97%;
+}
+#img_1a:hover{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+.TitreA{
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.div_main{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
+}
+
+.text{
+ font-size: 22px;
+}
+
+/* --------------------------------- */
+
+.div_infos_supp {
+    padding-top: 1%;
+    padding-bottom: 0;
+    width: 100%;
+    background-color: #0D1118;
+    color: #6B747D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#id_couleur{
+    color: #6B747D;
+}
+
+#id_couleur:hover{
+    text-decoration: underline;
+    color: #4281F5;
+}
+
+span:hover{
+    text-decoration: underline;
+    color: #4281F5;
+}
+
+.div_contacter {
+    margin-left: 50px;
+}
+
+.div_tel {
+    margin-right: 50px;
+}
+
+.div_contact, .div_mail {
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.div_infos_iut{
+    width: 100%;
+    background-color: #161B22;
+    color: #6B747D;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.liste_ressources{
+    display: flex;
+    margin-top: 2px;
+    justify-content: center;
+    list-style: none;
+}
+
+.liste_reseaux{
+    display: flex;
+    justify-content: right;
+    vertical-align: middle;
+}
+
+.liste_reseaux > li{
+    list-style: none;
+}
+
+.icones {
+    margin-right: var(--base-size-16, 16px) !important;
+}
+
+svg{
+    margin-top: -.150ex;
+    vertical-align: middle;
+}
+
+.class_couleur{
+    position: relative;
+    display: inline-block;
+}
+
+.class_couleur:hover{
+    color: #4281F5;
+}
+  
+.class_couleur::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    height: 1.5px;
+    width: 100%;
+    background-color: #FFFFFF;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.class_couleur:hover::after {
+    transform: scaleX(0.5);
+    background-color: #4281F5;
+}
+  

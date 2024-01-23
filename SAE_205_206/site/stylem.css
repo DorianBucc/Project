@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    transition: 0.4s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #555555;
+}
+.div_header_titre{
+    font-size: large;
+}
+.p_titre > a{
+    color: white;
+}
+.p1_titre > a{
+    color: #999999;
+    
+}
+.logo{
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    border-radius: 1em;
+    right: 2%;
+    top: 1px;
+}
+.div_nav_a > a{
+    padding: 0.25em;
+    display: flex;
+    justify-content: center;
+    height: 1.5em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.div_nav_a:hover > a{
+    background-color:#555555;
+}
+
+#div_nav_hidden{
+    display: grid;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+#div_nav_hidden > a{
+    transition: 0.15s;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
+}
+#div_nav_hidden > a:hover{
+    background-color: rgb(144, 144, 144);
+}
+
+.div_main{
+    border: white 5px solid;
+    background-color: #eeeeee;
+    padding-bottom: 2%;
+}
+.div_body{
+    text-align: center;
+}
+.div_body div img{
+    background-color: white;
+    height: auto;
+    width: 80%;
+    justify-self: center ;
+    margin: auto;
+}
+.div_body div{
+    margin: 2%;
+    background-color: #cccccc;
+    padding: 1em;
+}
+
+.div_body h3,.div_body a{
+    color: #004575;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.linkh3:hover{
+    color:#161B22;
+    text-decoration: underline;
+}
+
+.body_text{
+    transform: translateY(-10px);
+}
+
+
+
+/*---------------------*/
+
+.div_infos_supp {
+    padding-top: 1%;
+    padding-bottom: 0;
+    width: 100%;
+    background-color: #0D1118;
+    color: #6B747D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#id_couleur{
+    color: #6B747D;
+}
+
+#id_couleur:hover{
+    text-decoration: underline;
+    color: #4281F5;
+}
+
+span:hover{
+    text-decoration: underline;
+    color: #4281F5;
+}
+
+.div_contacter {
+    margin-left: 50px;
+}
+
+.div_tel {
+    margin-right: 50px;
+}
+
+.div_contact, .div_mail {
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 10px;
+}
+
+.div_infos_iut{
+    width: 100%;
+    background-color: #161B22;
+    color: #6B747D;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.liste_ressources{
+    display: flex;
+    margin-top: 2px;
+    justify-content: center;
+    list-style: none;
+}
+
+.liste_reseaux{
+    display: flex;
+    justify-content: right;
+    vertical-align: middle;
+}
+
+.liste_reseaux > li{
+    list-style: none;
+}
+
+.icones {
+    margin-right: var(--base-size-16, 16px) !important;
+}
+
+svg{
+    margin-top: -.150ex;
+    vertical-align: middle;
+}

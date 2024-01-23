@@ -1,0 +1,597 @@
+#ecart{
+	background-color: #d13d69;
+}
+#logo{								/*identifiant pour l'emplacement de la div du logo*/
+	position: absolute;
+	margin-left: 90%;
+}
+#logo img{			/*identifiant pour l'aspect de l'image du logo*/
+	width: 4em;
+	border-radius: 10px;
+	position: relative;
+	bottom: 32px;}	
+#large{width: 90%;}
+.apart li{font-size: 1.7ch;}
+.imgb section img{background-color: white;}
+.lienbizarre a{color: blue;}
+.lienbizarre a:hover{text-decoration: underline;
+	font-style: italic;}
+.noncentre{text-align: left;}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+a{									/*permet de retiré les aspect par default des liens*/
+	text-decoration: none;
+	color: white;
+}
+body{								/*CSS du body en général*/
+	font-family: 'Courier New', Courier, monospace;
+	background-image: url(https://wallpapers.com/images/hd/silhouette-of-man-holding-camera-during-sunset-photography-9tx5y1qbd7wgqbcc.jpg);
+	background-position: 0;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin: 0;}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+header{
+	font-family: 'Allerta Stencil', sans-serif;
+	background: rgba(119, 56, 20,0.98);
+	background-image: url(images/1458416.svg);
+	background-size: 35vh;
+	text-align: center;
+	padding: 9px;
+	height: 5em;
+}
+header h1{
+	margin: 0;
+	position: relative;
+	top: 20px;
+	font-weight: lighter;
+	}
+
+header h1 a{/*permet de retiré les aspect par default des liens*/
+	color: white;
+	background: #53271A;
+	padding: 0.6em;
+	padding-left: 2em;
+	padding-right: 2em;
+	box-shadow: 0px 0px 10px 0px rgb(77, 47, 22);
+	border-radius: 50%;}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+nav{
+	
+	background-color: rgba(119, 56, 20,0.95);
+	text-align: center;
+	padding-top: 0.5em;
+}
+nav h1{margin: 0;}
+nav p{
+	display: inline-block;
+	text-align: center;
+	background-color: #53271A;
+	border: #915302 solid 2px;
+	border-radius: 2em;
+	padding: 5px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 16px;
+}
+nav figcaption{
+	width: auto;
+	background-color: #53271A;
+	border-top: #915302 solid 2px;
+	border-bottom: #915302 solid 2px;
+	padding: 5px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 16px;
+}
+nav ul{
+	text-align: right;
+}
+nav li{
+	display: inline-block;
+	background-color: #53271A;
+	border: #915302 solid 2px;
+	padding: 5px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 16px;
+	width: 125px;
+}
+nav li:hover,nav p:hover{
+	border-color: gold;
+	background-image: linear-gradient(to right bottom,rgba(255,255,255,0.5),#1a2953);
+}
+nav, nav a{
+	color: white;
+	text-decoration: none;
+}
+nav p > a,li{ 							/*CSS de l'aspect des lien dans le menu de navigation et de la liste qui se trouve seulement dans le menu de navigation de la page information, c'est pour ça qu'il y a le "li"*/
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size:2ch;}
+nav li{							/*la liste qui se trouve seulement dans le menu de navigation de la page information, c'est pour ça qu'il y a le "li"*/
+	font-size: 1.5ch;
+	text-align:center;
+	margin-right: 20%;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+footer {			
+	background-color: #B86500;					/*CSS du pied de la page*/
+	color: white;
+	margin-bottom: 0;
+	text-align: center;
+	display: flex;
+	font-weight: bold;
+	justify-content: center;}
+footer > p {
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic; 							/*CSS des paragraphe dans le pied de la page*/
+	margin: 0;
+	padding: 2em;
+	flex-direction: column;}
+footer p:hover{
+	text-decoration: underline;	
+	font-weight: bolder;
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+section tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+section tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+section td {
+    border: 5px solid #1a2953b7;
+    padding: 0.2em 0.4em;
+	border-radius: 50px;
+	background-color:#d13d69ee;
+	font-weight: 650;
+}
+section table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+	text-align: center;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Autre */
+
+figure, audio
+{
+   margin: 0;
+}
+
+
+.pageindex section div a{
+	color: black;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* Jonatan */
+section ol{
+	display : flex;
+	flex-direction: row;
+	width: 63%;
+	margin-top: 0%;
+	margin-bottom: 3%;
+	text-align: start;
+	justify-content: center;
+}
+section ol li{
+	margin: 0.75em;
+}
+section img{
+	box-shadow: 10px 10px 20px; 		/*ducoup les img auront le parametre là pour le box shadows car il est prioritaire et le dernier vérifier car il est à la fin du code CSS*/
+}
+
+section a > h1:hover {
+	text-decoration: underline;	
+	font-weight: normal;
+}
+.liensec{
+	background-color: rgba(255,255, 255, 0.9);
+}
+section a:hover .liensec{
+	background-color: rgba(255,255, 255, 0.9);
+}
+.pagej section{
+	color : #915302;
+	background: rgba(0, 0, 0, 0.664);
+}
+.pagej{
+	background-image : url(images/wall.jpg);
+	background-size: 250%;
+	background-position: 50%;
+}
+.pagej div li {
+	color: #ff9900;
+	margin-bottom: 10px;
+}
+.pagej img {
+	color: black;
+}
+.pagej ol :hover {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 120%;
+	font-family:'Courier New', Courier, monospace; 	
+}
+#jtypes, #jcameras{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: larger;
+	width: 72%;
+	margin-bottom: 0%;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
+#jeffets {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: larger;
+	width: 72%;
+	margin-bottom: 0%;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	text-align: center;
+}
+.jcenter {
+    margin-left: 200px;
+    margin-right: 200px;
+	height: 200px;
+	width: 70%;
+}
+.pagej section div p,.pagej div > h1 a{
+	font-family:'Courier New', Courier, monospace;
+	margin: 0;
+}
+.pagej section > div{
+	background-color: rgba(255,255, 255, 0.25);
+	box-shadow: 0px 0px 10px 10px rgba(255,255, 255, 0.25);
+}
+.pagej div h1 {
+	font-weight: bold;
+	color: white;
+	font-style: normal;
+	font-size: larger;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+.pagej div h1:hover{
+	font-style: italic;
+	font-size: 140%;
+	text-decoration: underline;
+}
+.pagej section h1 > a, section h1{
+	font-family: 'Courier New', Courier, monospace;	
+}
+
+.pagej p i u, u{
+	color: #ff9900;
+	font-weight: bold;
+}
+.pagej p i u:hover, u:hover {
+	font-weight: normal;
+}
+.pagej p u i{
+	text-decoration: underline;
+	color: black;
+}
+.pagej section p {
+	font-size: larger;
+	font-weight: normal;
+}
+.pagej div p {
+	color: rgb(255, 255, 255);
+}
+.pagej i {
+	color: black;
+	font-weight: bold;
+}
+.pagej b {
+	color: rgb(0, 195, 255);
+	text-decoration: underline;
+}
+.pagej b:hover {
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* fin Jonatan */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Dorian */
+
+.paged i
+{
+	color: brown;
+	font-size: 20px;
+}
+
+.paged b
+{
+	text-shadow: 2.5px 1px rgba(0, 0, 0, 0.479);
+	font-size: 20px;
+}
+
+.paged section > h1:hover
+{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-decoration: underline;
+}
+
+.paged img:hover
+{
+	border: gold 3px solid;
+}
+
+.paged section > h1
+{
+	font-size: 45px;	
+}
+
+.paged
+{
+	background-image: url(https://www.midi-pyrenees-entreprendre.org/wp-content/uploads/2021/09/aesthetic.jpg);
+	background-size: 350%;
+	background-position: 50%;
+}
+
+/* Dorian */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* Thibault */
+.paget section img
+{
+	height: 300px;
+	position: relative;
+	top: 150px;
+}
+
+.paget
+{
+	background-image: url(images/Sans_titre.jpg);
+	background-size: 250%;
+	background-position: 50%;
+}
+
+.htitle
+{
+    width: 48%;
+    text-align: center;
+    padding: 5%;
+    border: 2px solid rgb(250, 208, 101);
+    border-radius: 80px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-image: url(images/histoiretitle.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.alltitle
+{
+	font-family: 'Satisfy', cursive;
+    font-size: 25px;
+}
+
+.alltitle h1
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.alltitle h1:hover{
+	text-decoration: none;
+	font-weight: lighter;
+	text-shadow: black 2px 2px 3px;
+}
+.alltitle i:hover{
+	font-size: 35px;
+}
+.paget section img:hover{
+	border: #ff9900 solid 2px;
+	color: #ff9900;
+}
+
+
+#backg
+{
+    background-image: url(images/parchemin.png);
+    background-size: 140%;
+    font-weight: bold;
+    width: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15% 0 15% 0;
+    box-shadow: 0px 0px 10px 10px rgba(255,255, 255, 0.35);
+}
+
+#width
+{
+    max-width: 40%;
+}
+#train{
+	max-width: 40%;
+	top: 50px;
+}
+.paget section div p{
+	font-style: italic;
+	
+}
+.paget i{
+	text-decoration: underline;
+}
+
+/* Thibault */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Antho */
+
+.pagea
+{
+	background-image: url(https://media.discordapp.net/attachments/1015271376401211392/1035291923029692426/unknown.png?width=1039&height=663);
+	background-size: 250%;
+}
+
+
+
+
+.pagea div p a:hover 
+{
+	font-style: italic;
+	color: white;
+}
+
+.pagea section h1
+{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	
+}
+
+.pagea div h1:hover  
+{
+
+	text-decoration: underline;
+	
+}
+
+.pagea section p
+{
+	font-family: 'Courier New', Courier, monospace;
+	
+}
+
+.pagea div p a 
+{
+	margin-left: 100px;
+	
+}
+
+
+/* Antho */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+section > h1{							/* CSS qui définit l'aspect des titre h1 seulement dans section*/
+	line-height: 2.5em;
+	width: 100%;						/*permet d'étirer le titre le long pour pouvoir voir seulement le titre sur un étage*/
+	text-align: center;
+}
+section { 								/*CSS de la Partie Section que est géneral*/
+	background: rgba(255,255, 255, 0.45);
+	padding: 2em;
+	display: flex;						/*Permet de d'utiliser flex-direction*/
+	flex-direction: row;				/*Permet d'aligner le contenu automatiquement 2 par 2*/
+	flex-wrap: wrap;					/*idem*/
+	justify-content: center;			/*Pour centré les information au centre de la page*/
+	padding-top: 5em;
+	font-size: 110%;
+}
+
+section > div, section img {
+	background-color: rgba(255,255, 255, 0.35);
+	font-weight: bold;
+	width: 48%;
+	text-align: center;
+	display: flex;						/*Permet de d'utiliser flex-direction*/
+	flex-direction: column;				/*Permet de les rangers en une colonnes seulement dans les div car dans les img il y rien à ranger*/
+	justify-content: center;			/*pour aligner verticalement le text dans les div*/
+	margin: 0.2em;
+	margin-bottom: 2em;
+	border-radius: 15% 0 15% 0; 		 /*permet d'arrondir les img et les div sur seulement deux coté à 15%*/
+}
+section > div{
+	box-shadow: 0px 0px 10px 10px rgba(255,255, 255, 0.35); /*permet de créer une ombre blanche flouter derriere les div et img mais les img on un deuxième parametrage box-shadow donc il nous pas ce parametre là*/
+}
+.longtxt div > p{
+	height:200px;
+	overflow-x: scroll;
+	scrollbar-width: thin;
+}
+.lontxt{
+	height:200px;
+	overflow-x: scroll;
+  	scrollbar-width: thin;
+}
+.pageinfo section ul a{color: black;}
+section #disp{
+	color: rgb(36, 87, 20);
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.touch p:hover .effect{
+	background-image: url(https://images-ext-2.discordapp.net/external/EE4QOqtiilicOAprm6Azr--Lk9WtxmPcJQgR7T6ePPc/%3Fw%3D1600%26h%3D899%26q%3D100/https/static.nationalgeographic.fr/files/styles/image_3200/public/2092443_archaeological-finds-from-the-jesus-era_hy2vhyamxp64qwf6l2cajezrbhggiqn63zkcn5eeuqux54zcfvtq_757x425.webp?width=1180&height=663);
+	background-size: 100%;
+	border-radius: 100px;
+}
+

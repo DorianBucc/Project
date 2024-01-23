@@ -1,0 +1,1 @@
+{"version":3,"file":"infractions.js","sourceRoot":"","sources":["../src/controleur/infractions.ts"],"names":[],"mappings":";AAAA,MAAM,cAAc;IAChB,IAAI;QACJ,QAAQ,CAAC,IAAI,GAAG,kBAAkB,CAAC;IAAA,CAAC;CACvC;AAED,IAAI,cAAc,GAAG,IAAI,cAAc,CAAC;AACxC,cAAc,CAAC,IAAI,EAAE,CAAC"}

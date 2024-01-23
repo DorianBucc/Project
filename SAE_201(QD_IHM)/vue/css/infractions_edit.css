@@ -1,0 +1,59 @@
+.infractions_commentaire {
+  text-align: left;
+  font-size: 0.9em;
+  white-space: pre;
+}
+
+
+#btn_delit_valider {
+  width: 60px;
+  height: 60px;
+  margin-left: 35%;
+  background: url(../verified.png) no-repeat center center;
+}
+
+#btn_delit_annuler {
+  width: 60px;
+  height: 60px;
+  background: url(../cancel.png) no-repeat center center;
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid4 {
+  background-color: rgb(87, 123, 221);
+  margin-left: 2em;
+  margin-right: 2em;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-radius: 0.5em;
+}
+
+
+/* div {
+  border: #000000 1px solid;
+} */
+
+
+.grid4>.modif {
+  margin: 0.5rem;
+  border: 2px black solid;
+  background-color: rgb(144, 205, 241);
+}
+
+.grid4>.notDecoration {
+  margin: 0.5rem;
+}
+
+.grid4>label {
+  margin-top: 1rem;
+}
+
+.notDecoration {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
