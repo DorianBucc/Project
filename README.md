@@ -29,6 +29,7 @@ Pour la partie programmation pur aller voir le répertoire [*Exercice*](https://
 - [Projet Jeu de la vie (SDL)](https://github.com/DorianBucc/Project/tree/main/SDL/GOLVersionTab) (2023)
 - [Projet Morpion (SDL)](https://github.com/DorianBucc/Project/tree/main/SDL/Morpion) (2023)
 - [Projet Bille rebondissante (SDL) - en cours](https://github.com/DorianBucc/Project/tree/main/SDL/ColisionGraviteNF) (2023-2024)
+
 </br>
 
 - [Certificat sur des sites](https://github.com/DorianBucc/Project/tree/main/2-Certificat)
