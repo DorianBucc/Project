@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 51, 153);
+    font-weight: 100;
+    font-size: 5vh;
+}

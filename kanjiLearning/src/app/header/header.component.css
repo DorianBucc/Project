@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0.5em;
+    background-color: rgb(63, 70, 82);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 3.5vh;
+}
+header{
+    display: flex;
+}
+.btnLink{
+font-size: 0.5em;
+height: 2em;
+transform: translate(1vw,5vh);
+}
+h1 > a{
+    text-decoration: none;
+}
