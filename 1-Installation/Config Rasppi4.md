@@ -15,7 +15,7 @@ Raspberry pi 4 en 4go ram sur Ubuntu server 22.04.3
 > Le deuxieme c'est l'os voulu : Raspberry pi OS, Ubuntu, Kali Linux, etc...
 
 > Le troisième c'est la carte sd (le mieux c'est entre 16go et 128go)
-3. Une fois que vous clique sur suivant il proposera de parametré, je vous conseille au moin de modifié :
+3. Une fois que vous clique sur suivant il proposera de parametré, je vous conseille au moin de modifié (Ctrl+shift+x):
     > *hostname* : nom du pc
 
     > *username et password* : nom d'utilisateur et le mot de passe
