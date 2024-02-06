@@ -25,4 +25,11 @@ Src :
 
 </br>
 
+## SSH Key
+
+Src : [Lien1](https://chrisjhart.com/Windows-10-ssh-copy-id/)
+
+0. `ssh-keygen -t rsa -b 4096`
+1. `type $env:USERPROFILE\.ssh\id_rsa.pub | ssh username@IP "cat >> .ssh/authorized_keys"`
+
 ---
