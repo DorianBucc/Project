@@ -24,7 +24,7 @@ Raspberry pi 4 en 4go ram sur Ubuntu server 22.04.3
 3. Une fois terminer, inserer la carte sd dans la Raspberry et allumer la en l'alimentant
 4. Installer votre OS en suivant l'intallateur.
 
-* Pour d'autre ajout/configuration sur linux voir mon ReadMe sur [Linux](https://github.com/DorianBucc/Prog/blob/main/Linux.md).
+* Pour d'autre ajout/configuration sur linux voir mon ReadMe sur [Linux](https://github.com/DorianBucc/Project/blob/main/1-Installation/Linux.md).
 
 </br>
 
