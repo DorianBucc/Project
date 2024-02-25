@@ -66,6 +66,7 @@ Src : [lien1](https://ubuntu.com/server/docs/service-openssh), [lien2](https://a
 
 5. Ouvré le nouveau port (installer si c'est pas déja fait)
 > `ufw allow nouveauportssh/tcp`
+
 > `ufw enable`
 
 </br>
