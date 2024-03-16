@@ -78,14 +78,15 @@ Src : [lien1](https://ubuntu.com/server/docs/service-openssh), [lien2](https://a
 2. Entré le mot de passe est vous serez connecter
 
 ### Pour installer une connexion par clé en SSH (Windows => Linux)
-1.(Windows) Pour commencer créer une clé sur votre windows.
+1. (Windows) Pour commencer créer une clé sur votre windows.
 
 > `ssh-keygen -t rsa -b 4096`
-> Taper sur entrée pour laisser par defaut pour le fichier
-> Puis taper sur entrée deux fois si vous ne voulez pas de passphrase
+> Taper sur entrée pour laisser par defaut pour le fichier.
+> Puis taper sur entrée deux fois si vous ne voulez pas de passphrase.
 
-2. Ensuite
-> cat ~/.ssh/id_ed25519.pub | ssh <username>@<hostname> "cat >> ~/.ssh/authorized_keys"
+2. (Windows) Ensuite copier la clé public sur votre linux
+> `cat ~/.ssh/id_rsa.pub | ssh <username>@<hostname> "cat >> ~/.ssh/authorized_keys"`
+> Bien évidemment changer "<username>@<hostname>".
 
 ## <a name="rtd">Pour se connecte en bureau à distance</a>
 
