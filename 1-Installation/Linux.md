@@ -40,7 +40,7 @@ Pour ajouter un utilisateur : `sudo adduser` *identifiant*
 
 ## <a name="ssh">Comment installer une connexion SSH</a>
 
-Src : [lien1](https://ubuntu.com/server/docs/service-openssh), [lien2](https://askubuntu.com/questions/1479500/how-to-change-the-ssh-port-on-ubuntu-23-04)
+Src : [lien1](https://ubuntu.com/server/docs/service-openssh), [lien2](https://askubuntu.com/questions/1479500/how-to-change-the-ssh-port-on-ubuntu-23-04), [lien3](https://lecrabeinfo.net/se-connecter-en-ssh-par-echange-de-cles-ssh.html)
 
 </br>
 
@@ -76,6 +76,16 @@ Src : [lien1](https://ubuntu.com/server/docs/service-openssh), [lien2](https://a
 1. Aller dans un terminal est pour vous connecté faite : `ssh nomutilisateur@adresseipdelamachine -p portssh`
 > pour une connexion en local
 2. Entré le mot de passe est vous serez connecter
+
+### Pour installer une connexion par clé en SSH (Windows => Linux)
+1.(Windows) Pour commencer créer une clé sur votre windows.
+
+> `ssh-keygen -t rsa -b 4096`
+> Taper sur entrée pour laisser par defaut pour le fichier
+> Puis taper sur entrée deux fois si vous ne voulez pas de passphrase
+
+2. Ensuite
+> cat ~/.ssh/id_ed25519.pub | ssh <username>@<hostname> "cat >> ~/.ssh/authorized_keys"
 
 ## <a name="rtd">Pour se connecte en bureau à distance</a>
 
