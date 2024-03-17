@@ -1,0 +1,25 @@
+<div>
+    <p style="height: 5vh;"></p>
+    <h1>Kanji's list meaning</h1>
+    <div id="reading">
+        
+
+        <div class="contour">
+            <div id="valueRead">    
+                <p>{{ valueDisplay }}</p>
+            </div>
+            <div class="valueDisplay">
+                {{ valueDisplayRep }}
+            </div>
+            <div>
+                <input type="text" #Input1  (keydown.enter)="onKeyDownEvent(Input1.value)" id="In1" /> <!-- (keyup)="onKeyPress(Input1.value)" -->
+            </div>
+            <div id="count">
+                Count : {{count}}
+            </div>
+            <div id="error">
+                Error : {{error}}
+            </div>
+        </div>
+    </div>
+</div>

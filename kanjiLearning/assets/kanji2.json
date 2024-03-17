@@ -1,0 +1,14 @@
+[
+    {"japaneseK":"人","japaneseA":["ひと","じん","にん"],"japaneseR":["hito","jin","nin"], "traductionF":["humain","homme","personne"], "traductionE":["human","men","person"]},
+    {"japaneseK":"一","japaneseA":["いち","いつ"],"japaneseR":["ichi","itsu"], "traductionF":["un","un"], "traductionE":["one","one"]},
+    {"japaneseK":"大","japaneseA":["だい","たい"],"japaneseR":["dai","tai"], "traductionF":["grand","grand"],"traductionE":["big","big"]},
+    {"japaneseK":"天","japaneseA":["てん"],"japaneseR":["ten"], "traductionF":["ciel"],"traductionE":["sky"]},
+    {"japaneseK":"火","japaneseA":["か"],"japaneseR":["ka"], "traductionF":["feu"],"traductionE":["fire"]},
+    {"japaneseK":"水","japaneseA":["すい"],"japaneseR":["sui"], "traductionF":["eau"],"traductionE":["water"]},
+    {"japaneseK":"木","japaneseA":["き"],"japaneseR":["ki"], "traductionF":["arbre"],"traductionE":["tree"]},
+    {"japaneseK":"犬","japaneseA":["いぬ"],"japaneseR":["inu"], "traductionF":["chien"],"traductionE":["dog"]},
+    {"japaneseK":"猫","japaneseA":["ねこ"],"japaneseR":["neko"], "traductionF":["chat"],"traductionE":["cat"]},
+    {"japaneseK":"魚","japaneseA":["さかな"],"japaneseR":["sakana"], "traductionF":["poisson"],"traductionE":["fish"]},
+    {"japaneseK":"鳥","japaneseA":["とり"],"japaneseR":["tori"], "traductionF":["oiseau"],"traductionE":["bird"]},
+    {"japaneseK":"馬","japaneseA":["うま"],"japaneseR":["uma"], "traductionF":["cheval"],"traductionE":["horse"]}
+]

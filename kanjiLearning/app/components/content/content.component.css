@@ -1,0 +1,39 @@
+#reading{
+    display: flex;
+    justify-content: center;
+}
+.contour{
+    text-align: center;
+    font-size: 1.5em;
+    background-size: 70vh;
+    border-radius: 1vw;
+    background-color: var(--color-content)
+}
+
+@media screen and (min-width: 1201px) {
+    .contour{
+        min-width: 30vw;
+        min-height: 50vh;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contour{
+        min-width: 50vw;
+        min-height: 30vh;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------*/
+
+*{
+    text-align: center;
+}
+
+h1{
+    color: rgb(0, 51, 153);
+    font-weight: 100;
+    font-size: 5vh;
+}

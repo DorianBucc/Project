@@ -1,0 +1,30 @@
+<div>
+    <div></div>
+    <div>
+        <p style="height: 5vh;"></p>
+        <h1>Connexion</h1>
+        <div id="reading">
+            
+
+            <div class="contour">
+                <div id="valueRead">        
+                    <p></p>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Nom d'utilisateur :</legend>
+                        <input type="text" [(ngModel)]="user">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Mot de passe :</legend>
+                        <input type="password" [(ngModel)]="password">
+                    </fieldset>
+                </div>
+                <button class="btn btn-primary" (click)="onClickSend()">Connecter</button>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
