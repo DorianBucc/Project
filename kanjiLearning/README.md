@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+[img1](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/Cours.png)
+[img2](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/Hirigana.png)
+[img3](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/HiriganaTable.png)
+[img4](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/Katakana.png)
+[img5](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/KatakanaTable.png)
+[img6](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/kanji.png)
+[img7](https://github.com/DorianBucc/Project/blob/main/kanjiLearning/imgForReadMe/kanjiTable.png)
