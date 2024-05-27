@@ -1,0 +1,228 @@
+<div>
+    <div>
+        <p style="height: 5vh;"></p>
+        <h1>Cours</h1>
+        <div id="reading">
+            <div class="contour" *ngFor="let item of coursJS">
+                <h1>{{item.titre}}</h1>
+                <div class="interieurs">
+                    <mat-card class="mat-card" *ngFor="let element of item.document">
+                        <mat-card-header>
+                            <mat-card-title>{{ element.titre }}</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content class="listeExemple">
+                            <div>
+                                <div *ngFor="let text of element.p">
+                                    <p *ngIf="text != '/r' && !text.includes('/h1') && !text.includes('/comp/')">
+                                        {{text}}
+                                    </p>
+                                    <h1 *ngIf="text.includes('/h1')">
+                                        {{text.replace('/h1','')}}
+                                    </h1>
+                                    <br *ngIf="text.includes('/r')">
+                                    <div *ngIf="text.includes('/comp/')" class="comp">
+                                        <div>{{text.split("/comp/")[0]}}</div>
+                                        <div>{{text.split("/comp/")[1]}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Tsu つ'">
+                                <p><ruby>一<rt>ひと</rt></ruby>つ</p>
+                                <p><ruby>二<rt>ふた</rt></ruby>つ</p>
+                                <p><ruby>三<rt>みっ</rt></ruby>つ</p>
+                                <p><ruby>四<rt>よっ</rt></ruby>つ</p>
+                                <p><ruby>五<rt>いつ</rt></ruby>つ</p>
+                                <p><ruby>六<rt>むっ</rt></ruby>つ</p>
+                                <p><ruby>七<rt>なな</rt></ruby>つ</p>
+                                <p><ruby>八<rt>やっ</rt></ruby>つ</p>
+                                <p><ruby>九<rt>ここの</rt></ruby>つ</p>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Ko 個'">
+                                <p>一個</p>
+                                <p>二個</p>
+                                <p>三個</p>
+                                <p>四個</p>
+                                <p>五個</p>
+                                <p>六個</p>
+                                <p>七個</p>
+                                <p>八個</p>
+                                <p>九個</p>
+                                <p>十個</p>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Mai 枚'">
+                                <p>一枚</p>
+                                <p>二枚</p>
+                                <p>三枚</p>
+                                <p>四枚</p>
+                                <p>五枚</p>
+                                <p>六枚</p>
+                                <p>七枚</p>
+                                <p>八枚</p>
+                                <p>九枚</p>
+                                <p>十枚</p>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Kai 回'">
+                                <p>一回</p>
+                                <p>二回</p>
+                                <p>三回</p>
+                                <p>四回</p>
+                                <p>五回</p>
+                                <p>六回</p>
+                                <p>七回</p>
+                                <p>八回</p>
+                                <p>九回</p>
+                                <p>十回</p>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Hiki 匹'">
+                                <p>一匹</p>
+                                <p>二匹</p>
+                                <p>三匹</p>
+                                <p>四匹</p>
+                                <p>五匹</p>
+                                <p>六匹</p>
+                                <p>七匹</p>
+                                <p>八匹</p>
+                                <p>九匹</p>
+                                <p>十匹</p>
+                            </div>
+                            <div class="alphabet alphabetL" *ngIf="element.titre == 'Fun 分'">
+                                <p>一<ruby>分<rt>ぷん</rt></ruby></p>
+                                <p>二<ruby>分<rt>ふん</rt></ruby></p>
+                                <p>三<ruby>分<rt>ぶん</rt></ruby></p>
+                                <p>四<ruby>分<rt>ぷん</rt></ruby></p>
+                                <p>五<ruby>分<rt>ふん</rt></ruby></p>
+                                <p>六<ruby>分<rt>ぷん</rt></ruby></p>
+                                <p>七<ruby>分<rt>ふん</rt></ruby></p>
+                                <p>八<ruby>分<rt>ぷん</rt></ruby></p>
+                                <p>九<ruby>分<rt>ふん</rt></ruby></p>
+                                <p>十<ruby>分<rt>ぷん</rt></ruby></p>
+                            </div>
+                            <div class="alphabet" *ngIf="element.titre == 'You'">
+                                <li>あなた</li>
+                                <li>あんた</li>
+                                <li>お<ruby>前<rt>まえ</rt></ruby>  </li>
+                                <li><ruby>君<rt>きみ</rt></ruby></li>
+                            </div>
+                            <div *ngIf="element.titre == 'Terminaison'">
+                                <table style="font-size:1rem;">
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <th><i>a</i></th>
+                                            <th><i>i</i></th>
+                                            <th><i>u</i></th>
+                                            <th><i>e</i></th>
+                                            <th><i>o</i></th>
+                                            <th><i>-te</i></th>
+                                            <th><i>-ta</i></th>
+                                        </tr>
+                                        <tr>
+                                            <td>ku</td>
+                                            <td>kanai</td>
+                                            <td>kimasu</td>
+                                            <td>ku</td>
+                                            <td>ke/keba</td>
+                                            <td>kō</td>
+                                            <td>ite</td>
+                                            <td>ita</td>
+                                        </tr>
+                                        <tr>
+                                            <td>gu</td>
+                                            <td>ganai</td>
+                                            <td>gimasu</td>
+                                            <td>gu</td>
+                                            <td>ge/geba</td>
+                                            <td>gō</td>
+                                            <td>ide</td>
+                                            <td>ida</td>
+                                        </tr>
+                                        <tr>
+                                            <td>u</td>
+                                            <td>wanai</td>
+                                            <td>imasu</td>
+                                            <td>u</td>
+                                            <td>e/eba</td>
+                                            <td>ou</td>
+                                            <td>tte</td>
+                                            <td>tta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>tsu</td>
+                                            <td>tanai</td>
+                                            <td>chimasu</td>
+                                            <td>tsu</td>
+                                            <td>te/teba</td>
+                                            <td>tō</td>
+                                            <td>tte</td>
+                                            <td>tta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ru</td>
+                                            <td>ranai</td>
+                                            <td>rimasu</td>
+                                            <td>ru</td>
+                                            <td>re/reba</td>
+                                            <td>rō</td>
+                                            <td>tte</td>
+                                            <td>tta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mu</td>
+                                            <td>manai</td>
+                                            <td>mimasu</td>
+                                            <td>mu</td>
+                                            <td>me/meba</td>
+                                            <td>mō</td>
+                                            <td>nde</td>
+                                            <td>nda</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nu</td>
+                                            <td>nanai</td>
+                                            <td>nimasu</td>
+                                            <td>nu</td>
+                                            <td>ne/neba</td>
+                                            <td>nō</td>
+                                            <td>nde</td>
+                                            <td>nda</td>
+                                        </tr>
+                                        <tr>
+                                            <td>bu</td>
+                                            <td>banai</td>
+                                            <td>bimasu</td>
+                                            <td>bu</td>
+                                            <td>be/beba</td>
+                                            <td>bō</td>
+                                            <td>nde</td>
+                                            <td>nda</td>
+                                        </tr>
+                                        <tr>
+                                            <td>su</td>
+                                            <td>sanai</td>
+                                            <td>shimasu</td>
+                                            <td>su</td>
+                                            <td>se/seba</td>
+                                            <td>sō</td>
+                                            <td>shite</td>
+                                            <td>shita</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="auteur">
+        Source:
+    </div>
+    <div class="footer">
+        <div *ngFor="let auteur of source" class="auteur">
+            {{ auteur }}
+        </div>
+    </div>
+</div>

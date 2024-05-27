@@ -1,0 +1,109 @@
+#reading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+mat-card-header{
+    justify-content: center;
+}
+@media screen and (min-width: 800px) {
+    #table-mat, table, mat-paginator{
+        width: 50vw;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    #table-mat, mat-paginator{
+        width: 90vw;
+        text-align: center;
+    }
+    table{
+        font-size: 5vw;
+    }
+}
+.radio-mat{
+    margin-top: 1rem;
+}
+table{
+    margin-top: 1rem;
+}
+mat-paginator{
+    margin: 1rem;
+}
+/* Style de la table */
+table {
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+border-radius: 0.5rem;
+}
+
+/* Style des cellules d'en-tête */
+th {
+background-color: #f2f2f2;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+border-bottom: 2px solid #ddd;
+}
+
+/* Style des cellules de données */
+td {
+padding: 10px;
+text-align: center;
+border-bottom: 1px solid #ddd;
+}
+
+/* Style des lignes impaires */
+tr:nth-child(odd) {
+background-color: #f9f9f9;
+}
+
+/* Style au survol de la souris */
+tr:hover {
+background-color: #f5f5f5;
+}
+
+/* Style pour la première cellule de la première ligne */
+th:first-child,
+td:first-child {
+border-top-left-radius: 5px;
+}
+
+/* Style pour la dernière cellule de la première ligne */
+th:last-child,
+td:last-child {
+border-top-right-radius: 5px;
+}
+
+/* Style pour la première cellule de la dernière ligne */
+tr:last-child td:first-child {
+border-bottom-left-radius: 5px;
+}
+
+/* Style pour la dernière cellule de la dernière ligne */
+tr:last-child td:last-child {
+border-bottom-right-radius: 5px;
+}
+
+
+/* Partie quiz */
+
+.mat-card{
+    padding: 2rem;
+    text-align: center;
+}
+#In1{
+    width: 20rem;
+    font-size: 1rem;
+}
+.compteur{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+#error, #count{
+    font-size: 1.25rem;
+}
+#valueRead{
+    margin: 2rem;
+}

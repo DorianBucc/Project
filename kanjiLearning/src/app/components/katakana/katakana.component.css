@@ -1,0 +1,30 @@
+#reading{
+    display: flex;
+    justify-content: center;
+}
+mat-card-header{
+    justify-content: center;
+}
+.mat-card{
+    padding: 2rem;
+    text-align: center;
+}
+#In1{
+    width: 6rem;
+    font-size: 1rem;
+}
+.compteur{
+display: grid;
+grid-template-columns: 50% 50%;
+}
+#error, #count{
+    font-size: 1.25rem;
+}
+#valueRead{
+    margin: 2rem;
+}
+@media screen and (max-width: 1200px) {
+    td, th{
+        padding: 2.75vw;
+    }
+}

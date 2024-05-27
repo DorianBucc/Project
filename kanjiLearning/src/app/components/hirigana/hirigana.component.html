@@ -1,0 +1,95 @@
+<div id="reading">
+    <div>
+        <p style="height: 5vh;"></p>
+        <mat-tab-group>
+            <mat-tab label="Quiz">
+                <mat-card class="mat-card">
+                    <mat-card-header>
+                        <mat-card-title>Liste de l'alphabet hirigana</mat-card-title>
+                        <mat-card-subtitle>Hirigana's list</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div id="valueRead">    
+                            <p>{{ valueDisplay }}</p>
+                        </div>
+                        <div>
+                            <mat-form-field id="In1">
+                                <mat-label>réponse</mat-label>
+                                <input matInput type="text" #Input1 (keyup)="onKeyPress(Input1.value)" [(ngModel)]="valueWrite"/>
+                            </mat-form-field>
+                        </div>
+                        <div class="compteur">
+                            <div id="count">
+                                <mat-icon fontIcon="check"></mat-icon> : {{count}}
+                            </div>
+                            <div id="error">
+                                <mat-icon fontIcon="close"></mat-icon> : {{error}}
+                            </div>
+                        </div>
+                        
+                    </mat-card-content>
+                </mat-card>
+            </mat-tab>
+            <mat-tab label="Tab">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                    <ng-container matColumnDef="lettre">
+                      <th mat-header-cell *matHeaderCellDef>  </th>
+                      <td mat-cell *matCellDef="let element"> {{element.lettre}} </td>
+                    </ng-container>
+                  
+                    <ng-container matColumnDef="conso">
+                      <th mat-header-cell *matHeaderCellDef> ∅ </th>
+                      <td mat-cell *matCellDef="let element"> {{element.conso}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="K">
+                        <th mat-header-cell *matHeaderCellDef> K </th>
+                        <td mat-cell *matCellDef="let element"> {{element.K}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="S">
+                        <th mat-header-cell *matHeaderCellDef> S </th>
+                        <td mat-cell *matCellDef="let element"> {{element.S}} </td>
+                    </ng-container>
+                    
+                    <ng-container matColumnDef="T">
+                        <th mat-header-cell *matHeaderCellDef> T </th>
+                        <td mat-cell *matCellDef="let element"> {{element.T}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="N">
+                        <th mat-header-cell *matHeaderCellDef> N </th>
+                        <td mat-cell *matCellDef="let element"> {{element.N}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="H">
+                        <th mat-header-cell *matHeaderCellDef> H </th>
+                        <td mat-cell *matCellDef="let element"> {{element.H}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="M">
+                        <th mat-header-cell *matHeaderCellDef> M </th>
+                        <td mat-cell *matCellDef="let element"> {{element.M}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="Y">
+                        <th mat-header-cell *matHeaderCellDef> Y </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Y}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="R">
+                        <th mat-header-cell *matHeaderCellDef> R </th>
+                        <td mat-cell *matCellDef="let element"> {{element.R}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="W">
+                        <th mat-header-cell *matHeaderCellDef> W </th>
+                        <td mat-cell *matCellDef="let element"> {{element.W}} </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

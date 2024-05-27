@@ -1,0 +1,151 @@
+#reading{
+    display: grid;
+    justify-content: center;
+}
+.contour{
+    margin-bottom: 1em;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+    background-size: 70vh;
+    border-radius: 1vw;
+    background-color: var(--color-content)
+}
+
+@media screen and (min-width: 1201px) {
+    .contour{
+        min-width: 30vw;
+        min-height: 40vh;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contour{
+        min-width: 50vw;
+        min-height: 30vh;
+    }
+}
+
+mat-card-header{
+    justify-content: center;
+    padding: 1rem;
+}
+mat-card-title{
+    font-size: 1.5rem;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+
+h1{
+    color: rgb(64, 102, 179);
+    padding: 1em;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.interieurs{
+    display: grid;
+    justify-content: center;
+    max-width: 75vw;
+    font-size:  1.25rem;
+}
+.interieurs h1{
+    color: rgb(25, 42, 75);
+    padding: 0.25em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.paves{
+    padding: 1rem;
+}
+.listeExemple{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 60% 40%; */
+    justify-content: center;
+}
+.alphabet{
+    font-size:  1rem;
+    padding-left: 1rem;
+
+}
+.alphabetL{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.alphabetL > p{
+    padding: 0.2rem;
+}
+rt{
+    font-size: 0.75rem;
+}
+@media screen and (min-width: 901px) {
+    .interieurs{
+        grid-template-columns: 35vw 35vw;
+        grid-gap: 1rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .interieurs{
+        grid-template-columns: 70vw;
+        grid-gap: 1rem;
+    }
+}
+.listeExemple h1{
+    font-weight: 600;
+    padding: 0.6rem;
+}
+.comp{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.comp div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+.comp > div:nth-child(2) {
+    text-align: right;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: rgb(63,70,82);
+    margin-top: 1rem;
+    padding: 2rem;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-top: 1rem;
+    padding: 2rem; */
+}
+.auteur{
+    margin-right: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

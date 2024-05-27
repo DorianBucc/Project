@@ -1,1 +1,0 @@
-export const DNS = "https://service.exercicejaponais.fr/kanjilearning/kanjiService.php"; // http://92.138.70.173:8050  https://exercicejaponais.fr

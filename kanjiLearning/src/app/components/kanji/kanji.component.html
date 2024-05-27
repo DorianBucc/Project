@@ -1,0 +1,108 @@
+<div id="reading">
+    <div>
+        <p style="height: 5vh;"></p>
+        <mat-tab-group>
+            <mat-tab label="Quiz" >
+                <mat-card class="mat-card">
+                    <mat-card-header>
+                        <mat-card-title id="quiz-mat">Quiz kanji</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div id="valueRead">    
+                            <p>{{ valueDisplay }}</p>
+                        </div>
+                        <div class="valueDisplay">
+                            {{ valueDisplayRep }}
+                        </div>
+                        
+                        <div>
+                            <mat-form-field id="In1">
+                                <mat-label>réponse</mat-label>
+                                <input matInput type="text" #Input1 (keydown.enter)="onKeyDownEvent(Input1.value)"/>
+                            </mat-form-field>
+                            <!-- <input type="text" #Input1  (keydown.enter)="onKeyDownEvent(Input1.value)" id="In1"/> -->
+                        </div>
+                        <div class="compteur">
+                            <div id="count">
+                                <mat-icon fontIcon="check"></mat-icon> : {{count}}
+                            </div>
+                            <div id="error">
+                                <mat-icon fontIcon="close"></mat-icon> : {{error}}
+                            </div>
+                        </div>
+                        <div class="radio-mat">
+                            <mat-radio-group  [(ngModel)]="mode" (change)="restart()">
+                                <mat-radio-button value="P">Prononciation</mat-radio-button>
+                                <mat-radio-button value="S">Signification</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        
+                    </mat-card-content>
+                </mat-card>
+            </mat-tab>
+            <mat-tab label="Table">
+                <mat-card class="mat-card">
+                    <mat-card-header>
+                        <mat-card-title id="table-mat">Liste des kanji</mat-card-title>
+                        <mat-card-subtitle>Kanji's list</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                            <table class="mat-elevation-z8">
+                                <thead>
+                                    <tr>
+                                        <th>Kanji</th>
+                                        <th>Prononciation</th>
+                                        <th>Signification</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of kanji.slice(pageIndex*pageSize, (pageIndex+1)*pageSize)" class="mat-mdc-row mdc-data-table__row cdk-row">
+                                        <td>{{ item.japaneseK }}</td>
+                                        <td>{{ item.japaneseA }}</td>
+                                        <td>{{ item.traductionF }}</td>
+                                    </tr>
+                                </tbody>
+                                
+                                
+                            </table>
+                        <!-- <div class="demo-options">
+                            <mat-form-field>
+                            <mat-label>Length</mat-label>
+                            <input matInput placeholder="Length" type="number" [(ngModel)]="length">
+                            </mat-form-field>
+                        
+                            <mat-form-field>
+                            <mat-label>Page Size</mat-label>
+                            <input matInput placeholder="Page Size" type="number" [(ngModel)]="pageSize">
+                            </mat-form-field>
+                        
+                            <mat-form-field>
+                            <mat-label>Page Index</mat-label>
+                            <input matInput placeholder="Page Index" type="number" [(ngModel)]="pageIndex">
+                            </mat-form-field>
+                        
+                            <mat-form-field>
+                            <mat-label>Page Size Options</mat-label>
+                            <input matInput [ngModel]="pageSizeOptions" (ngModelChange)="setPageSizeOptions($event)"
+                                    [ngModelOptions]="{updateOn: 'blur'}" placeholder="Ex. 10,25,50">
+                            </mat-form-field>
+                        </div> -->
+                        
+                        <mat-paginator #paginator
+                                        class="demo-paginator"
+                                        (page)="handlePageEvent($event)"
+                                        [length]="length"
+                                        [pageSize]="pageSize"
+                                        [disabled]="disabled"
+                                        [showFirstLastButtons]="showFirstLastButtons"
+                                        [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+                                        [hidePageSize]="hidePageSize"
+                                        [pageIndex]="pageIndex"
+                                        aria-label="Select page">
+                        </mat-paginator>
+                    </mat-card-content>
+                </mat-card>
+            </mat-tab>
+        </mat-tab-group>        
+    </div>
+</div>
