@@ -1,0 +1,134 @@
+:root{
+    --taille : 200px;
+}
+
+legend {
+    font-size: 0.8rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-style: hidden;
+    width: var(--taille);
+    font-size: medium;
+}
+
+.entrees {
+    margin-bottom: 1%;
+    border: 1px solid gainsboro;
+    width: var(--taille);
+}
+
+.entrees:hover, .entrees:focus{
+    border-color: black;
+}
+
+#boutonInscription {
+    background-color: #1A2432;
+    color: #FFFFFF;
+}
+
+#boutonInscription:hover {
+    background-color: #293648;
+}
+#succes{
+    color: green;
+    font-style: italic;
+    font-size: 0.75em;
+    width: var(--taille);
+    text-align: center;
+}
+
+
+
+
+
+/* ancien connexion.css */
+
+:root{
+    --taille : 200px;
+}
+
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+}
+label{
+    text-align: center;
+}
+.navigateBar{
+    padding: 2vh;
+    background-color: rgb(244, 249,254);
+    margin: 0;
+    padding: 1em;
+    color: rgb(0, 51, 153);
+    font-weight: 300;
+    font-size: 3.5vh;
+    font-family: none;
+    box-shadow: 0px 8px 20px -10px rgba(0, 0, 0,0.3);
+}
+#mainContent{
+    display: flex;
+    justify-content: center;
+}
+#formulaire{
+    display: grid;
+}
+#formulaire > * {
+    margin: 1vh;
+}
+#formulaire > p {
+    margin: 2vh;
+    margin-bottom: 0vh;
+}
+#content1 > form > * {
+    margin: 1em;
+}
+#content1 > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content1{
+    margin-top: 2%;
+    border-radius: 1em;
+    padding: 5vh;
+    box-shadow: 0px 8px 20px -10px rgba(0, 0, 0,0.5);
+}
+
+.inputText{
+    border: 2px solid rgba(0, 51, 153,0.45);
+    border-radius: 1em;
+    padding: 0.25vh;
+}
+
+#btn_valide{
+    width: 35%;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(167, 183, 216, 0.644);
+    border-radius: 1em;
+}
+#btn_valide:hover{
+    transition: 100ms;
+    /* border: 2px solid rgba(0, 51, 153,0.45); */
+    /* transition: 250ms; */
+    background-color: rgba(86, 236, 86, 0.644);
+}
+#btn_valide:focus{
+    transition: 25ms;
+    border: 2px solid rgba(0, 102, 0, 0.45);
+    /* transition: 250ms; */
+    background-color: rgb(86, 236, 86);
+}
+#error{
+    color: red;
+    font-style: italic;
+    font-size: 0.75em;
+    width: var(--taille);
+    text-align: center;
+}

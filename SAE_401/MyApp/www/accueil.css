@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+}
+.navigateBar{
+    background-color: rgb(244, 249,254);
+    color: rgb(0, 51, 153);
+    box-shadow: 0px 8px 20px -10px rgba(0, 0, 0,0.3);
+}
+
+#mainContent{
+    display: flex;
+    justify-content: center;
+    /* font-size: 2.5vh; */
+}
+#mainContent > div{
+    text-align: center;
+    margin: auto;
+    border-radius: 1em;
+    box-shadow: 0px 8px 20px -10px rgba(0, 0, 0,0.5);
+}
+.avatar{       
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px;
+    background-color: #d2b302; 
+    border-radius: 50%; 
+}
+.dropdown-toggle:after {
+    border: none;
+}
+
+.annonce{
+    padding: 1rem;
+    margin: 0.2rem;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+.annonce > div{
+    font-size: larger;
+    text-align: center;
+}
+
+.annonce > p{
+    text-align: right;
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
+.annonce > p:hover{
+    /* font-size: small; */
+    cursor: pointer;
+}
+
+
+#ficheVoisin{
+    display: grid;
+    grid-template-columns: 15vw 50vw;
+}
+#barVoisin{
+    display: grid;
+    grid-template-rows: 10em;
+}
+#contenuFicheVoisin{
+    display: grid;
+    grid-template-rows: 10em;
+}
+#contenuFicheVoisin > div{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+}
+#contenuFicheVoisin > h1{
+    font-size: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+}
+
+
+#formulaire{
+    display: grid;
+}
+#formulaire > * {
+    margin: 1vh;
+}
+#formulaire > p {
+    margin: 2vh;
+    margin-bottom: 0vh;
+}
+#content1 > form > * {
+    margin: 1em;
+}
+#content1 > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content1{
+    margin-top: 2%;
+    border-radius: 1em;
+    padding: 5vh;
+    box-shadow: 0px 8px 20px -10px rgba(0, 0, 0,0.5);
+}
+
+.inputText{
+    border: 2px solid rgba(0, 51, 153,0.45);
+    border-radius: 1em;
+    padding: 0.25vh;
+}
+
+#btn_valide{
+    width: 35%;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(167, 183, 216, 0.644);
+    border-radius: 1em;
+}
+#btn_valide:hover{
+    transition: 100ms;
+    /* border: 2px solid rgba(0, 51, 153,0.45); */
+    /* transition: 250ms; */
+    background-color: rgba(86, 236, 86, 0.644);
+}
+#btn_valide:focus{
+    transition: 25ms;
+    border: 2px solid rgba(0, 102, 0, 0.45);
+    /* transition: 250ms; */
+    background-color: rgb(86, 236, 86);
+}
+#error{
+    color: red;
+    font-style: italic;
+    font-size: 0.75em;
+    width: var(--taille);
+    text-align: center;
+}
+#succes{
+    color: green;
+    font-style: italic;
+    font-size: 0.75em;
+    width: var(--taille);
+    text-align: center;
+}
+
+.boutonsActions{
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    margin-right: 5px;
+}
+
+#liensDetails {
+    color: rgb(27, 108, 179);
+}
+
+#btnModifier, #btnRetour {
+    background-color: rgb(27, 108, 179);
+}
+
+#btnModifier:hover, #btnRetour:hover {
+    background-color: rgb(14, 126, 224);
+}
+
+#btnCreer {
+    background-color: rgb(132, 71, 255);
+}
+
+#btnCreer:hover {
+    background-color: rgb(153, 102, 255);
+}
+
+#liensDetails:hover {
+    color: rgb(16, 120, 212);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#btnValider {
+    background-color: rgb(78, 205, 50);
+}
+
+#btnValider:hover {
+    background-color: rgb(160, 215, 49);
+}
+
+#btnRefuser, #btnBannir, #btnSupprimer{
+    background-color: firebrick;
+}
+
+#btnRefuser:hover, #btnBannir:hover, #btnSupprimer:hover {
+    background-color: rgb(219, 21, 21);
+}
+
+#btnValoriser {
+    background-color: rgb(223, 238, 19);
+    color: black;
+}
+
+#btnValoriser:hover {
+    background-color: rgb(238, 255, 0);
+    color: black;
+}
+
+.demandes {
+    display: block;
+    justify-content: center;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-of-type(even) {
+  background-color: #eee;
+}
+
+table {
+  justify-content: center;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mapLeafletjs { 
+    width: 100%;
+    height: 400px; 
+}
+
+.carouselImage {
+    width: 100%;
+    height: 50%;
+    object-fit: contain; 
+}
+
+#filtreMateriel, #filtreService, #filtreCategorie-menu, #filtreStatut-menu{
+    margin: 0.1rem;   
+}
+
+.card-body {
+    height: 20rem;
+}

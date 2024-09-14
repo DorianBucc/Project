@@ -1,0 +1,19 @@
+.btn-primary:not(.active) {
+    background-color: gray;
+    border-color: gray;
+}
+
+.marginCont{
+    margin: 1rem;
+}
+
+.contentVoisin{
+    padding: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.contentVoisin > button{
+    margin-top: 1rem;
+}
